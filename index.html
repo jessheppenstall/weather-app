@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/08f3264298.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              class="form-control"
+              id="search-bar"
+              placeholder="Enter city"
+              autocomplete="off"
+              autofocus
+            />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search" class="form-control" id="search-button" />
+          </div>
+          <div class="col-2">
+            <input type="button" value="Current" class="form-control" id="current-city-button" />
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-6">
+          <h1 id="city"></h1>
+          <h5 id="current-day-time"></h5>
+          <ul>
+            <li class="weather-details">feels like: <span id="feels-like"></span>ºF</li>
+            <li class="weather-details">humidity: <span id="humidity"></span>%</li>
+            <li class="weather-details">wind: <span id="wind"></span> mph</li>
+          </ul>
+        </div>
+        <div class="col-6" id="current-weather">
+          <h1 id="current-weather-icon">
+            <i class="fas fa-sun" id="sun-icon"></i>
+          </h1>
+          <h6 class="current-temp">
+            <span id="current-temp"></span>º 
+            <span class=units> <a href="#" id="celsius-link">ºC</a> | 
+              <a href=# id="farenheit-link">ºF </a></small>
+              <div> 
+                <span id=weather-description></span>
+              </div>
+          </h6>
+        </div>
+      </div>
+
+      <div class="row six-day-forecast">
+        <div class="col-2">
+          <div class="forecast-day">wednesday</div>
+          <i class="fas fa-cloud-sun forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">92º</span>
+            |
+            <span class="forecast-temp-min">70º</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-day">thursday</div>
+          <i class="fas fa-sun forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">89º</span>
+            |
+            <span class="forecast-temp-min">67º</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-day">friday</div>
+          <i class="fas fa-cloud-sun-rain forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">86º</span>
+            |
+            <span class="forecast-temp-min">65º</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-day">saturday</div>
+          <i class="fas fa-cloud forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">88º</span>
+            |
+            <span class="forecast-temp-min">69º</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-day">sunday</div>
+          <i class="fas fa-cloud-showers-heavy forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">87º</span>
+            |
+            <span class="forecast-temp-min">64º</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-day">monday</div>
+          <i class="fas fa-sun forecast-icon"></i>
+          <div class="forecast-temp">
+            <span class="forecast-temp-max">94º</span>
+            |
+            <span class="forecast-temp-min">70º</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/javascript.js">
+    </script>
+  </body>
+</html>
