@@ -47,7 +47,7 @@ li {
   display: block;
   font-family: "Roboto", sans-serif;
   margin: 60px auto 0 auto;
-  max-width: 50%;
+  max-width: 700px;
   padding: 50px;
 }
 
@@ -122,5 +122,6 @@ li {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  margin-left: 360px;
+  margin: 0 auto;
+  max-width: 700px;
 }
