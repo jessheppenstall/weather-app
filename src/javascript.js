@@ -44,7 +44,6 @@ function displayWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
-  console.log(response.data);
 }
 
 function getCurrentPosition(position) {
