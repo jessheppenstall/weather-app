@@ -46,7 +46,7 @@ li {
   border-radius: 20px;
   display: block;
   font-family: "Roboto", sans-serif;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   max-width: 50%;
   padding: 50px;
 }
@@ -116,4 +116,11 @@ li {
 }
 #current-weather-icon {
   font-size: 150px;
+}
+
+#footer {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-left: 360px;
 }
